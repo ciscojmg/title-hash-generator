@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔐 Title Hash Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Title Hash Generator</h1>
+    <p>Enter a task title to get a unique 4-digit code.</p>
+
+    <div class="input-row">
+      <input id="inputText" type="text" placeholder="Ej: [FRONT] Reporte de Consumos...">
+      <button onclick="generateCode()">Generate</button>
+    </div>
+
+    <div class="output-row">
+      <div class="output" id="resultBox">
+        <span id="outputCode">#XXXX</span>
+      </div>
+      <button class="copy-button" id="copyBtn" onclick="copyToClipboard()">📋</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
